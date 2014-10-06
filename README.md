@@ -1,4 +1,3 @@
-mozilla-cz-theme
+Motiv Mozilla.cz
 ================
-
-WordPress theme for Czech Mozilla website.
+Motiv pro WordPress, který je použít na webu Mozilla.cz.

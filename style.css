@@ -1,177 +1,565 @@
 /*  
 Theme Name: Mozilla.cz
 Theme URI: http://www.mozilla.cz/
-Description: Mozilla Czech theme based on One Mozilla design
+Description: Mozilla Czech theme based on mozilla-europe.org look
 Version: 1.0
-Author: Pavel Cvrƒçek <pcvrcek@mozilla.cz>
+Author: Pavel Cvrcek
 Author URI: http://www.mozilla.cz/
 */
 
-/* Reset and initial settings */
-body, html, p, h1, h2, h3, ul, li {
-	margin: 0px;
-	padding: 0px;
-	border: 0px none;
+body {
+	margin: 0;
+	padding: 0;
+	background: url(images/background.jpg) repeat-x fixed;
+	font: 13px Verdana, "Geneva CE", lucida, sans-serif;
+	background-color: White;
+	color: Black;
 }
 
-header, nav {
+p {
+	margin: 15px 0 15px 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 22px;
+	border-bottom: 1px solid Silver;
+	color: #31497A;
+}
+
+h2 {
+	font-size: 18px;
+	margin: 20px 0 5px 0;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+ul {
+	padding-left: 0px;
+	margin: 8px 0 0 20px;
+}
+
+a {
+	color: #31497A;
+}
+
+img {
+	border: 0;
+}
+
+img.center, img.aligncenter {
+	border: 0;
+	display: block;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+dl	{
+	margin: 1em 0 1em 0;
+}
+
+dt	{
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+dd	{
+	padding:0;
+	margin:0 0 .5em 1.5em
+}
+
+th {
+	text-align: left;
+	padding-left: 3px;
+}
+
+td {
+	padding-left: 3px;
+}
+
+
+.hide {
+	display: none;
+}
+
+.no-mar-pad {
+	margin: 0;
+	padding: 0;
+}
+
+.separator {
+	border-bottom: 1px solid Silver;
+}
+
+.line-separator {
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px dotted Silver;
+}
+
+.soubor {
+	background-color: #D9E6F2;
+	border: 1px solid #BED3E4;
+	padding: 0 1px 0 1px;
+	color: Black;
+}
+
+.nabidka {
+	background-color: #FBEFE7;
+	padding: 0 1px 0 1px;
+	border: 1px solid #EBC7C7;
+	color: Black;
+}
+
+.quote{margin:2em 0;text-align:center;font-style:italic}
+.codearea		{margin:1em;padding:0}
+.codearea code	{font-family:monospace;display:block;white-space:pre;margin:0;padding:.5em;overflow:auto;
+				border:1px solid #FC6;background:#FFFAF5}
+
+.codear {
+	background-color: #F0F6F9;
+	border: 1px solid #1F4363;
+	padding: 5px 5px 5px 5px;
+	color: Black;
+}
+
+
+#page {
+	margin: 0 auto 0 auto;
+	width: 900px;
+	background-color: White;
+	border: 3px solid #163754;
+}
+
+#header {
+	background: url(images/header-b.png) repeat-x;
+	height: 50px;
+}
+
+#clear {
+  clear: both;
+}
+
+#footer {
+	font-size: 11px;
+	padding: 3px 0;
+	margin: 5px 15px;
+	border-top: 1px solid Gray;
+	text-align: center;
+}
+
+/* HlavnÌ nabÌdka */
+
+#h-logo {
+	margin-left: 10px;
+	padding-top: 10px;
+	float: left;
+}
+
+#h-menu {
+	float: right;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 700px;
+}
+
+#h-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	
+	background: transparent url(./images/header-n.png) no-repeat scroll left top;
+	float: right;
+	
+}
+
+#h-menu ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	display: block;
+	
+	background: transparent url(./images/header-n.png) no-repeat scroll right top;
+}
+
+.h-menu-item {
+
+}
+
+.h-menu-item:hover {
+	
+}
+
+.h-menu-item a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	height: 35px;
+	display: inline-block; 
+	padding: 15px 15px 0 15px;
+}
+
+/* IE6 nezvl·dne */
+html>body .h-menu-item a {display: block}
+
+.h-menu-item a:hover {
+	background-color: #31526F;
+}
+
+/* Obsah */
+
+#content {
+
+}
+
+#c-left {
+	float: left;
+	width: 630px;
+	
+	padding: 15px;
+}
+
+#c-sidebar {
+	width: 200px;
+	margin-left: 655px;
+	
+	padding: 15px;
+}
+
+#mcs-logo {
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.news-logo {
+	float:right;
+	margin: 5px;
+}
+
+.sidebar-box {
+	margin: 5px 0 15px 0;
+}
+
+.sidebar-box-title,.comments-title, .souvisejici-prispevky {
+	font-size: 16px; /*	border-top: 1px solid Silver;*/
+	padding: 7px 3px 4px 6px;
+	background-image: url(images/sidebar-background.png);
+	font-weight: bolder;
+}
+
+.sidebar-item-title {
+	padding: 0;
+	margin: 5px 0 5px 5px;
+}
+
+.sidebar-item-text {
+	margin-left: 20px;
+}
+
+#sidebar-search {
+	margin: 8px 0 0 5px;
+}
+
+.sidebar-links li {
+	font-size: 14px;
+	margin: 3px 0 3px 0;
+}
+
+/* HlaviËka s hlavnÌmi produkty */
+
+#notification-area {
+	padding: 10px 0 10px 10px;
+	border: 1px solid #1F4363;
+	margin: 0 0 15px 0;
+	background-color: #F0F6F9; /*#F0F6F9;*/
+}
+
+.products-header-download {
+	font-size: 11px;
+}
+
+#notification-area h3 {
+	margin: 10px 0 3px;
+	padding: 0;
+}
+
+#notification-area p {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+#products-others {
+	text-align: right;
+	font-size: 11px;
+	margin: 3px 8px 0 0;
+	padding: 0;
+}
+
+/* Novinky */
+
+.news-footer {
+	font-size: 11px;
+	background-color: #EFEFEF;
+	padding: 2px 0 2px 5px;
+}
+
+.news-icon {
+	float: right;
+	margin: 0 10px 3px 3px;
+}
+
+/* PatiËka */
+
+.archive-navigation {
+	text-align: center;
+	margin-top: 18px;
+}
+
+/** Navigace */
+.alignleft {
+	float:left;
+	margin-right: 8px;
+}
+
+.alignright {
+	float:right;
+	margin-left: 8px;
+}
+
+/** Koment·¯e */
+.comment-block {
 	display: block;
 }
 
-/* Imports */
-@font-face{
-	font-family:'Open Sans Light';
-	src:url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot?#iefix2013') format('embedded-opentype'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.woff?2013') format('woff'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.ttf?2013') format('truetype');
-	font-weight:normal;
-	font-style:normal;
+.comment-avatar {
+	float:left;
+	height: 50px;
 }
 
-@font-face{
-	font-family:'Open Sans Light';
-	src:url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.eot?#iefix2013') format('embedded-opentype'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.woff?2013') format('woff'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.ttf?2013') format('truetype');
-	font-weight:bold;
-	font-style:normal;
+.comment-text {
+	margin-left: 65px;
 }
 
-@font-face{
-	font-family:'Open Sans Light';
-	src:url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.eot?#iefix2013') format('embedded-opentype'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.woff?2013') format('woff'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.ttf?2013') format('truetype');
-	font-weight:normal;
-	font-style:italic;
+#comments-gravatar-help {
+	float:right;
+	margin: 8px 8px 0;
+	padding: 0;
 }
 
-@font-face{
-	font-family:'Open Sans';
-	src:url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot?#iefix2013') format('embedded-opentype'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff?2013') format('woff'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.ttf?2013') format('truetype');
-	font-weight:normal;
-	font-style:normal;
+/* Odkazovani na weby v jinem jazyce */
+a[hreflang]	{
+	padding-right: 12px;
+	background: transparent none no-repeat 100% 0%	
 }
 
-@font-face{
-	font-family:'Open Sans';
-	src:url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.eot?#iefix2013') format('embedded-opentype'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.woff?2013') format('woff'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.ttf?2013') format('truetype');
-	font-weight:bold;
-	font-style:normal;
+a[hreflang=en]	{
+	background-image:url("./images/en.gif")
 }
 
-@font-face{
-	font-family:'Open Sans';
-	src:url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.eot?#iefix2013') format('embedded-opentype'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.woff?2013') format('woff'),
-		url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.ttf?2013') format('truetype');
-	font-weight:normal;
-	font-style:italic;
+/* P¯ehled produkt˘ */
+
+.product-box {
+	border-top: 1px dotted Silver;
+}
+
+.product-icon {
+   padding-top: 25px;	
+}
+
+.product-icon-small {
+   margin-left: 10px;	
+}
+
+.product-icon-box {
+	width: 80px;
+	float: left;
+}
+
+.product-content-box {
+	margin-left: 85px;
+	vertical-align: top;
 }
 
 
-
-/* Style default tags */
-body {
-	border-top: 2px solid #fff;
-	background-color: #EEE;
-	color: black;
-	font-family: "Open Sans","Lucida Sans","Lucida Grande","Lucida Sans Unicode",Calibri,sans-serif;
-	font-size: 14px;
-	line-height: 20px;
+.product-title {
+	margin-bottom: 0px;
 }
 
-
-a:link, a:visited {
-	color: #67A7D0;
-	text-decoration: none;
+.product-links {
+	font-size: 11px;
 }
 
-a:hover, a:focus, a:active {
-	color: #4090C4;
-	text-decoration: underline;
-}
-
-header {
+#product-gallery {
 
 }
 
-.large {
-	font-size: 72px;
-	letter-spacing: -3px;
-	line-height: 100%;
-}
-h1 {
-	font-size: 48px;
-	letter-spacing: -2px;
-	line-height: 100%;
-	font-family: "Open Sans Light","Lucida Sans","Lucida Grande","Lucida Sans Unicode",Calibri,sans-serif;
-	padding: 45px 0 0 0;
-}
-h2 {
-	font-size: 32px;
-	letter-spacing: -1px;
-	line-height: 100%;
-}
-h3 {
-	font-size: 28px;
-	letter-spacing: -0.5px;
-	line-height: 100%;
-}
-h4 {
-	font-size: 24px;
-	letter-spacing: -0.25px;
-	line-height: 100%;
-}
-.small, small {
-	font-size: 12px;
-	line-height: 100%;
+.product-gallery-img {
+	margin: 5px;
+	float:left;
 }
 
-nav ul {
-	padding: 5px 10px 5px 0;
-	float: right;
+/* vzhled tabulky */
+table.nice {
+	border: 1px solid Silver;
+	border-spacing:0;
+	border-collapse:collapse;
+        margin-bottom: 10px;
 }
 
-nav li {
-	display: inline-block;
-	margin: 0 15px 0 0;
+table.nice > td {
+	vertical-align: top;
+	border: 1px solid #D0D0D0;
+	padding: 1px 5px 1px 2px;
 }
 
-/* Classes */
+table.nice > thead {
+	font-weight: bold;
+	background-color: #1E4262;
+	color: White;
+}
+
+/* Integrace Twitteru */
+ul.twitter {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#twitter-bottom {
+	margin-top: 3px;
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+/* Stranky "Ke stazeni" */
+.download-box,#download-box {
+	-moz-border-radius: 1em;
+  border-radius: 1em;
+  width: 400px;
+  padding: 2px 5px 10px 0px;
+  margin: 15px 0 15px 0;
+}
+
+.download-app-logo {
+	margin: 15px 0px 0px 20px;
+}
+
+.download-box-version {
+  margin: 0 0 10px 20px;
+}
+
+.download-box-link {
+  text-align: right;
+	margin: 15px 15px 0 0;
+	font-size: 11px;
+}
+
+.download-ico-win {
+	background-image:url(/images/windows-16.png);
+}
+
+.download-ico-linux {
+	background-image:url(/images/linux-16.png);
+}
+
+.download-ico-mac {
+	background-image:url(/images/mac-os-x-16.png);
+}
+
+.download-ico-flash {
+	background-image:url(/images/flash-16.png);
+}
+
+.download-ico-reader {
+	background-image:url(/images/reader-16.png);
+}
+
+.download-ico-silverlight {
+	background-image:url(/images/silverlight-16.png);
+}
+
+.download-ico-java {
+	background-image:url(/images/java-16.png);
+}
+
+.download-ico-ff {
+	background-image:url(/images/firefox-16.png);
+}
+
+.download-ico-tb {
+	background-image:url(/images/thunderbird-16.png);
+}
+
+.download-ico-sm {
+	background-image:url(/images/seamonkey-16.png);
+}
+
+.download-ico-addon {
+	background-image:url(/images/addon-16.png);
+}
+
+.download-ico-nvu {
+	background-image:url(/images/nvu-16.png);
+}
+
+.download-ico-kompozer {
+	background-image:url(/images/kompozer-16.png);
+}
+
+.download-ico-android {
+	background-image:url(/images/android-16.png);
+}
+
+.download-ico-bluegriffon {
+	background-image:url(/images/bluegriffon-16.png);
+}
+
+
+
+.download-ico-win,
+.download-ico-linux,
+.download-ico-mac,
+.download-ico-flash,
+.download-ico-reader,
+.download-ico-silverlight,
+.download-ico-java,
+.download-ico-ff,
+.download-ico-tb,
+.download-ico-sm,
+.download-ico-addon, 
+.download-ico-nvu,
+.download-ico-kompozer, 
+.download-ico-android,
+.download-ico-bluegriffon {
+	background-position:left center;
+	background-repeat:no-repeat;
+	display:block;
+	padding:2px 0 2px 20px;
+}
+
+#social-box {
+	margin-top: -5px;
+}
+
+#social-box td {
+	padding-left: 0px;
+}
+
+/* Tiskov˝ styl */
+@media print {
+
+#header,.navigation,#comment-form {
+	display:none;
+	visibility: hidden;
+}
+
 #page {
-	background-color: #EEE;
-	background-image: url('images/bg-sky.png');
-	background-repeat: repeat-x;
+	border: 0;
+	width: auto;
 }
 
-#page-content {
-	max-width: 960px;
-	margin: 0 auto 0 auto;
-	
-	background-image: url('images/firefox-logo.png');
-	background-position: top right;
-	background-repeat: no-repeat;	
-}
-
-#site-description {
-	margin: 5px 0 0 0;
-	font-size: 20px;
-}
-
-#logo {
-	float: right;
-}
-
-#sidebar {
-	float: right;
-	width: 200px;
-}
-
-#content {
-	margin: 0 200px 0 0;
 }
