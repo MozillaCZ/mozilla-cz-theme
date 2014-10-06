@@ -1,7 +1,7 @@
 </div>
 <div id="c-sidebar">
 		<div id="mcs-logo">
-			<a href="http://contribute.mozilla.org/Mozilla_Community">
+			<a href="https://mozillians.org/">
 				<img src="<?php bloginfo('template_directory'); ?>/images/mctlogo.png" alt="" width="163" height="94" />
 			</a>
 		</div>
